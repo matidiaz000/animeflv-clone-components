@@ -4,8 +4,7 @@
 name: Node.js Package
 
 on:
-  release:
-    types: [created]
+  push
 
 jobs:
   publish:
@@ -26,6 +25,6 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: pnpm build
-      - run: pnpm publish --no-git-checks
+      - run: pnpm release --ci
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
