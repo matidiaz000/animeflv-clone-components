@@ -7,7 +7,7 @@
     "type": "git",
     "url": "https://github.com/matidiaz000/animeflv-clone-components.git"
   },
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Matias Díaz",
   "license": "ISC",
   "type": "module",
