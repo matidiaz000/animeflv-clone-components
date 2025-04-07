@@ -25,6 +25,6 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - run: pnpm build
-      - run: pnpm release --ci
+      - run: pnpm release
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
