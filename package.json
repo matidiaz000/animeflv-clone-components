@@ -3,6 +3,10 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/matidiaz000"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matidiaz000/animeflv-clone-components.git"
+  },
   "version": "0.0.1",
   "author": "Matias Díaz",
   "license": "ISC",
