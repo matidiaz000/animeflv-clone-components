@@ -1,28 +1,38 @@
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Button } from '../lib'
-// import { Button } from '@matidiaz000/animeflv-clone-components'
-// import '@matidiaz000/animeflv-clone-components/styles.css'
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+
+import Layout from "./layout";
+import Home from "./pages/Home";
+import Error from "./pages/Error";
+
+const CardPage = React.lazy(() => import("./pages/Card"));
+const ColorPage = React.lazy(() => import("./pages/Color"));
+const DropdownPage = React.lazy(() => import("./pages/Dropdown"));
+const FooterPage = React.lazy(() => import("./pages/Footer"));
+const FormPage = React.lazy(() => import("./pages/Form"));
+const GridPage = React.lazy(() => import("./pages/Grid"));
+const HeaderPage = React.lazy(() => import("./pages/Header"));
+const SlidePage = React.lazy(() => import("./pages/Slide"));
 
 function App() {
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <Button />
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/card" element={<CardPage />} />
+          <Route path="/color" element={<ColorPage />} />
+          <Route path="/dropdown" element={<DropdownPage />} />
+          <Route path="/footer" element={<FooterPage />} />
+          <Route path="/form" element={<FormPage />} />
+          <Route path="/grid" element={<GridPage />} />
+          <Route path="/header" element={<HeaderPage />} />
+          <Route path="/slide" element={<SlidePage />} />
+          <Route path="*" element={<Error />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
