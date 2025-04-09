@@ -13,7 +13,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build",
+    "build:lib": "tsc -b && vite build --config vite.lib.config",
+    "build:doc": "tsc -b && vite build --config vite.doc.config",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -45,13 +46,13 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/animeflv-clone-components.umd.cjs",
-  "module": "./dist/animeflv-clone-components.js",
+  "main": "./dist/lib/animeflv-clone-components.umd.cjs",
+  "module": "./dist/lib/animeflv-clone-components.js",
   "exports": {
     ".": {
-      "import": "./dist/animeflv-clone-components.js",
-      "require": "./dist/animeflv-clone-components.umd.cjs"
+      "import": "./dist/lib/animeflv-clone-components.js",
+      "require": "./dist/lib/animeflv-clone-components.umd.cjs"
     },
-    "./styles.css": "./dist/animeflv-clone-components.css"
+    "./styles.css": "./dist/lib/animeflv-clone-components.css"
   }
 }

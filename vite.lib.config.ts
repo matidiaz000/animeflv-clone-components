@@ -10,12 +10,13 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 export default defineConfig({
   plugins: [
     react(),
-    dts({ include: ['lib'] })
+    dts({ include: ['lib', 'src'] })
   ],
   build: {
     lib: {
       entry: resolve(__dirname, 'lib/index.tsx'),
       name: 'animeflv-clone-components',
+      
       // the proper extensions will be added
       fileName: 'animeflv-clone-components',
     },
