@@ -36,7 +36,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: "20"
-      
+          cache: "pnpm"
+          scope: "@matidiaz000"
+          registry-url: "https://npm.pkg.github.com"
+
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
         with:
@@ -52,10 +55,10 @@ jobs:
           static_site_generator: next
 
       - name: Configure pnpm
-        run: pnpm config set '//npm.pkg.github.com/:_authToken' ${{ secrets.GITHUB_TOKEN }}
+        run: pnpm config set //npm.pkg.github.com/:_authToken=${{ secrets.GITHUB_TOKEN }}
 
       - name: Install dependencies
-        run: pnpm install --frozen-lockfile
+        run: pnpm install
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
