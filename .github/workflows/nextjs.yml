@@ -51,6 +51,9 @@ jobs:
           # You may remove this line if you want to manage the configuration yourself.
           static_site_generator: next
 
+      - name: Configure pnpm
+        run: pnpm config set '//npm.pkg.github.com/:_authToken' ${{ secrets.GITHUB_TOKEN }}
+
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
         env:
