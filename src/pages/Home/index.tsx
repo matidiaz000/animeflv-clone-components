@@ -1,10 +1,21 @@
+import CodeBlock from '../../components/CodeBlock';
+import { one } from './codePart'
+
 const Home = () => {
   return (
     <>
-      <h1>Bootstrap and Vite</h1>
+      <h1>AnimeFLV clone components</h1>
       <p>The official guide for how to include and bundle Bootstrap’s CSS and JavaScript in your project using Vite.</p>
-      <h2 id="what-is-vite">What is Vite?</h2>
-      <p><a href="#">Vite</a> is a modern frontend build tool designed for speed and simplicity. It provides an efficient and streamlined development experience, especially for modern JavaScript frameworks.</p>
+      <h2 id="Installing">Installing</h2>
+      <p><strong>Package manager</strong></p>
+      <p>Using npm:</p>
+      <CodeBlock language="plaintext" code="$ npm install @matidiaz000/animeflv-clone-components" />
+      <p>Using yarn:</p>
+      <CodeBlock language="plaintext" code="$ yarn install @matidiaz000/animeflv-clone-components" />
+      <p>Using pnpm:</p>
+      <CodeBlock language="plaintext" code="$ pnpm install @matidiaz000/animeflv-clone-components" />
+      <p>Once the package is installed, you can import the library using import or require approach:</p>
+      <CodeBlock language="js" code={one} />
     </>
   );
 };

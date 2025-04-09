@@ -1,7 +1,31 @@
 import { Outlet, Link } from 'react-router-dom'
 import AnimeFLVLogo from './assets/logo.png'
+import { useEffect, useState } from 'react';
+
+interface ITitlesNav {
+  id: number;
+  link: string;
+  text: string;
+}
 
 const Layout = () => {
+  const [titlesNav, setTitlesNav] = useState<ITitlesNav[] | null>(null);
+
+  useEffect(() => {
+    if (!titlesNav) {
+      const h2 = document.body.getElementsByTagName(`h2`)
+      const titlesNavMap: ITitlesNav[] = [];
+      let h2Id: ITitlesNav['link'] | null = null;
+      for (let i = 0; i < h2.length; i++) {
+        h2Id = h2[i].getAttribute("id");
+        if (h2Id != null) {
+          titlesNavMap.push({ id: i, link: h2Id, text: h2[i].innerText});
+        }
+      }
+      setTitlesNav(titlesNavMap)
+    }
+  }, [titlesNav]);
+
   return (
     <div className="container row gx-5 h-100">
       <aside className="col-3 bg-dark">
@@ -33,11 +57,9 @@ const Layout = () => {
             <div>
               <nav>
                 <ul>
-                  <li><a href="#what-is-vite" className="active">What is Vite?</a></li>
-                  <li><a href="#setup" className="">Setup</a></li>
-                  <li><a href="#project-structure" className="">Project structure</a></li>
-                  <li><a href="#configure-vite" className="">Configure Vite</a></li>
-                  <li><a href="#import-bootstrap" className="">Import Bootstrap</a></li>
+                  {titlesNav?.map((el) => (
+                    <li key={el.id}><a href={`#${el.link}`} className="active">{el.text}</a></li>
+                  ))}
                 </ul>
               </nav>
             </div>
