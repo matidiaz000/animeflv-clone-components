@@ -36,6 +36,7 @@ jobs:
       - name: Build library with Vite
         run: pnpm build:lib
 
-      - run: pnpm publish --no-git-checks
+      - name: Publish library in npm
+        run: pnpm publish --no-git-checks
         env:
           NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
