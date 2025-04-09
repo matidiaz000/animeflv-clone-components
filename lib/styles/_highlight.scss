@@ -1,0 +1,20 @@
+@import 'highlight.js/styles/github-dark.css';
+
+pre {
+  margin: 0;
+  border-bottom-left-radius: var(--bs-border-radius-xl);
+  border-bottom-right-radius: var(--bs-border-radius-xl);
+  width: 100%;
+}
+
+.col {
+  min-width: 0;
+}
+
+.pre code.hljs {
+  padding: $spacer;
+}
+
+.hljs {
+  background-color: $dark;
+}

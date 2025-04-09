@@ -10,14 +10,15 @@ const Layout = () => {
           <strong className="pt-2 d-block">Getting started</strong>
           <ul className="list-unstyled">
             <li><Link to="/">Home</Link></li>
-            <li><Link to="/card">Card</Link></li>
+            <li><Link to="/typography">Typography</Link></li>
             <li><Link to="/color">Color</Link></li>
             <li><Link to="/dropdown">Dropdown</Link></li>
-            <li><Link to="/footer">Footer</Link></li>
-            <li><Link to="/form">Form</Link></li>
             <li><Link to="/grid">Grid</Link></li>
+            <li><Link to="/card">Card</Link></li>
+            <li><Link to="/form">Form</Link></li>
             <li><Link to="/header">Header</Link></li>
             <li><Link to="/slide">Slide</Link></li>
+            <li><Link to="/footer">Footer</Link></li>
           </ul>
         </div>
       </aside>

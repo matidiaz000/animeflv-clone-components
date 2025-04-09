@@ -13,6 +13,7 @@ const FormPage = React.lazy(() => import("./pages/Form"));
 const GridPage = React.lazy(() => import("./pages/Grid"));
 const HeaderPage = React.lazy(() => import("./pages/Header"));
 const SlidePage = React.lazy(() => import("./pages/Slide"));
+const TypographyPage = React.lazy(() => import("./pages/Typography"));
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/grid" element={<GridPage />} />
           <Route path="/header" element={<HeaderPage />} />
           <Route path="/slide" element={<SlidePage />} />
+          <Route path="/typography" element={<TypographyPage />} />
           <Route path="*" element={<Error />} />
         </Route>
       </Routes>
