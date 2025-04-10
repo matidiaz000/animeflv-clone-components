@@ -10,7 +10,7 @@ interface IProps {
 
 const CodeBlock = ({ children, code, language }: IProps) => {
   const codeRef = useRef(null);
-  const [copySuccess, setCopySuccess] = useState('Copy');
+  const [isCopy, setIsCopy] = useState(false);
 
   useEffect(() => {
     if (codeRef && codeRef.current) {
@@ -22,7 +22,8 @@ const CodeBlock = ({ children, code, language }: IProps) => {
   const copy = (e: any) => {
     navigator.clipboard.writeText(code);
     e.target.focus();
-    setCopySuccess('Copied!');
+    setIsCopy(true);
+    setTimeout(() => setIsCopy(false), 2000)
   }
 
   return (
@@ -33,7 +34,13 @@ const CodeBlock = ({ children, code, language }: IProps) => {
       </div>
       )}
       <pre className={`m-0 w-100 position-relative ${children ? 'rounded-bottom rounded-bottom-4' : 'rounded rounded-4'}`}>
-        <button className={styles.copyBtn} onClick={copy}>{copySuccess}</button>
+        <button
+          className={`btn border-0 text-light ${styles.copyBtn}`}
+          onClick={copy}
+          onBlur={() => setIsCopy(false)}
+        >
+          <span className="material-icons-round">{isCopy ? 'check_circle' : 'content_copy'}</span>
+        </button>
         <code className={`language-${language} bg-dark p-3`} ref={codeRef}>
           {code}
         </code>

@@ -3,7 +3,16 @@
 @import 'styles/poppins-font';
 @import 'styles/index';
 @import 'styles/highlight';
+@import 'icomoon/style.css';
 
 html, body, #root {
   height: 100%;
+}
+
+i {
+  font-size: 1.5rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
 }

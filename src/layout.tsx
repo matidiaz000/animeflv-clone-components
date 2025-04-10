@@ -36,6 +36,7 @@ const Layout = () => {
             <li><Link reloadDocument to="/">Home</Link></li>
             <li><Link reloadDocument to="/typography">Typography</Link></li>
             <li><Link reloadDocument to="/color">Color</Link></li>
+            <li><Link reloadDocument to="/icons">Icons</Link></li>
             <li><Link reloadDocument to="/dropdown">Dropdown</Link></li>
             <li><Link reloadDocument to="/grid">Grid</Link></li>
             <li><Link reloadDocument to="/card">Card</Link></li>

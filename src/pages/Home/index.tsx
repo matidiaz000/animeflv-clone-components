@@ -6,7 +6,7 @@ const Home = () => {
     <>
       <h1>AnimeFLV clone components</h1>
       <p>The official guide for how to include and bundle Bootstrap’s CSS and JavaScript in your project using Vite.</p>
-      <h2 id="Installing">Installing</h2>
+      <h2 className="h4" id="Installing">Installing</h2>
       <p><strong>Package manager</strong></p>
       <p>Using npm:</p>
       <CodeBlock language="plaintext" code="$ npm install @matidiaz000/animeflv-clone-components" />

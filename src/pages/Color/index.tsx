@@ -32,7 +32,7 @@ const ColorPage = () => {
           <div className="p-3 mb-3 text-bg-dark rounded-3">Dark</div>
         </div>
       </div>
-      <h2>Buttons</h2>
+      <h2 className="h4">Buttons</h2>
       <p>Bootstrap includes several button variants, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
       <div className="border rounded-top rounded-top-4 border-bottom-0 p-3 border-light border-opacity-25">
         <button type="button" className="btn btn-primary">Primary</button>
@@ -59,10 +59,10 @@ const ColorPage = () => {
 <button type="button" className="btn btn-link">Link</button>`}
         </pre>
       </div>
-      <h2 id="what-is-vite">What is Vite?</h2>
+      <h2 className="h4" id="what-is-vite">What is Vite?</h2>
       <p><a href="#">Vite</a> is a modern frontend build tool designed for speed and simplicity. It provides an efficient and streamlined development experience, especially for modern JavaScript frameworks.</p>
       <Button />
-      <h2 id="variants">Buttons</h2>
+      <h2 className="h4" id="variants">Buttons</h2>
       <p>Bootstrap includes several button variants, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
       <div className="bd-example m-0 border-0">
         <button type="button" className="btn text-white">Nav button</button>

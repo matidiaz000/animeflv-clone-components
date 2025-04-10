@@ -33,6 +33,10 @@ export const routes: RouteRecord[] = [
         Component: lazy(() => import('./pages/Color')),
       },
       {
+        path: 'icons',
+        Component: lazy(() => import('./pages/Icons')),
+      },
+      {
         path: 'dropdown',
         Component: lazy(() => import('./pages/Dropdown')),
       },
