@@ -10,7 +10,7 @@ const __dirname = dirname(fileURLToPath(import.meta.url))
 export default defineConfig({
   plugins: [
     react(),
-    dts({ include: ['lib', 'src'] })
+    dts({ include: ['lib'] })
   ],
   build: {
     lib: {

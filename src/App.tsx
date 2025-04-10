@@ -1,41 +1,65 @@
-import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { lazy } from "react";
+import { Navigate } from "react-router-dom";
+import type { RouteRecord } from 'vite-react-ssg'
 
 import Layout from "./layout";
 import Home from "./pages/Home";
 import Error from "./pages/Error";
 
-const CardPage = React.lazy(() => import("./pages/Card"));
-const ColorPage = React.lazy(() => import("./pages/Color"));
-const DropdownPage = React.lazy(() => import("./pages/Dropdown"));
-const FooterPage = React.lazy(() => import("./pages/Footer"));
-const FormPage = React.lazy(() => import("./pages/Form"));
-const GridPage = React.lazy(() => import("./pages/Grid"));
-const HeaderPage = React.lazy(() => import("./pages/Header"));
-const SlidePage = React.lazy(() => import("./pages/Slide"));
-const TypographyPage = React.lazy(() => import("./pages/Typography"));
-
-function App() {
-
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path="/card" element={<CardPage />} />
-          <Route path="/color" element={<ColorPage />} />
-          <Route path="/dropdown" element={<DropdownPage />} />
-          <Route path="/footer" element={<FooterPage />} />
-          <Route path="/form" element={<FormPage />} />
-          <Route path="/grid" element={<GridPage />} />
-          <Route path="/header" element={<HeaderPage />} />
-          <Route path="/slide" element={<SlidePage />} />
-          <Route path="/typography" element={<TypographyPage />} />
-          <Route path="*" element={<Error />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  )
-}
-
-export default App
+export const routes: RouteRecord[] = [
+  {
+    path: '/',
+    Component: Layout,
+    HydrateFallback: Layout,
+    children: [
+      {
+        index: true,
+        Component: Home,
+      },
+      {
+        path: '404',
+        Component: Error,
+      },
+      {
+        path: '*',
+        element: <Navigate to="/404" replace />,
+      },
+      {
+        path: 'card',
+        Component: lazy(() => import('./pages/Card')),
+      },
+      {
+        path: 'color',
+        Component: lazy(() => import('./pages/Color')),
+      },
+      {
+        path: 'dropdown',
+        Component: lazy(() => import('./pages/Dropdown')),
+      },
+      {
+        path: 'footer',
+        Component: lazy(() => import('./pages/Footer')),
+      },
+      {
+        path: 'form',
+        Component: lazy(() => import('./pages/Form')),
+      },
+      {
+        path: 'grid',
+        Component: lazy(() => import('./pages/Grid')),
+      },
+      {
+        path: 'header',
+        Component: lazy(() => import('./pages/Header')),
+      },
+      {
+        path: 'slide',
+        Component: lazy(() => import('./pages/Slide')),
+      },
+      {
+        path: 'typography',
+        Component: lazy(() => import('./pages/Typography')),
+      },
+    ],
+  },
+]

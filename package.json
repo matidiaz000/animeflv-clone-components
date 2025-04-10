@@ -12,16 +12,16 @@
   "license": "ISC",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build:lib": "tsc -b && vite build --config vite.lib.config",
-    "build:doc": "tsc -b && vite build --config vite.doc.config",
+    "dev": "vite-react-ssg dev",
+    "build:lib": "tsc -b && vite-react-ssg build --config vite.lib.config",
+    "build:doc": "tsc -b && vite-react-ssg build --config vite.doc.config",
     "lint": "eslint .",
     "preview": "vite preview"
   },
   "dependencies": {
     "bootstrap": "^5.3.5",
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
@@ -36,12 +36,13 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
     "highlight.js": "^11.11.1",
-    "react-router-dom": "^7.5.0",
+    "react-router-dom": "^6.30.0",
     "sass": "~1.64.2",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
-    "vite": "^6.2.0",
-    "vite-plugin-dts": "^4.5.3"
+    "vite": "^5.4.17",
+    "vite-plugin-dts": "^4.5.3",
+    "vite-react-ssg": "^0.8.5"
   },
   "files": [
     "dist"

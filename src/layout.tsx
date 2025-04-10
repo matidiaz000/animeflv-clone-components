@@ -1,6 +1,6 @@
 import { Outlet, Link } from 'react-router-dom'
 import AnimeFLVLogo from './assets/logo.png'
-import { useEffect, useState } from 'react';
+import { Suspense, useEffect, useState } from 'react';
 
 interface ITitlesNav {
   id: number;
@@ -33,22 +33,24 @@ const Layout = () => {
           <img src={AnimeFLVLogo} alt="AnimeFLV" className="mt-3" />
           <strong className="pt-2 d-block">Getting started</strong>
           <ul className="list-unstyled">
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/typography">Typography</Link></li>
-            <li><Link to="/color">Color</Link></li>
-            <li><Link to="/dropdown">Dropdown</Link></li>
-            <li><Link to="/grid">Grid</Link></li>
-            <li><Link to="/card">Card</Link></li>
-            <li><Link to="/form">Form</Link></li>
-            <li><Link to="/header">Header</Link></li>
-            <li><Link to="/slide">Slide</Link></li>
-            <li><Link to="/footer">Footer</Link></li>
+            <li><Link reloadDocument to="/">Home</Link></li>
+            <li><Link reloadDocument to="/typography">Typography</Link></li>
+            <li><Link reloadDocument to="/color">Color</Link></li>
+            <li><Link reloadDocument to="/dropdown">Dropdown</Link></li>
+            <li><Link reloadDocument to="/grid">Grid</Link></li>
+            <li><Link reloadDocument to="/card">Card</Link></li>
+            <li><Link reloadDocument to="/form">Form</Link></li>
+            <li><Link reloadDocument to="/header">Header</Link></li>
+            <li><Link reloadDocument to="/slide">Slide</Link></li>
+            <li><Link reloadDocument to="/footer">Footer</Link></li>
           </ul>
         </div>
       </aside>
       <main className="col row gx-5 pt-3 pb-5">
         <div className="col">
-          <Outlet />
+          <Suspense>
+            <Outlet />
+          </Suspense>
         </div>
         <div className="col-3">
           <div className="sticky-top">

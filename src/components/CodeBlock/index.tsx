@@ -1,5 +1,6 @@
 import { ReactNode, useEffect, useRef, useState } from 'react';
 import hljs from 'highlight.js';
+import styles from './index.module.scss'
 
 interface IProps {
   children?: ReactNode;
@@ -31,8 +32,8 @@ const CodeBlock = ({ children, code, language }: IProps) => {
         {children}
       </div>
       )}
-      <pre className={`m-0 w-100 ${children ? 'rounded-bottom rounded-bottom-4' : 'rounded rounded-4'}`}>
-        <button onClick={copy}>{copySuccess}</button>
+      <pre className={`m-0 w-100 position-relative ${children ? 'rounded-bottom rounded-bottom-4' : 'rounded rounded-4'}`}>
+        <button className={styles.copyBtn} onClick={copy}>{copySuccess}</button>
         <code className={`language-${language} bg-dark p-3`} ref={codeRef}>
           {code}
         </code>
