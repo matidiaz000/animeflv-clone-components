@@ -1,4 +1,5 @@
-import { Button } from '../../../lib'
+import CodeBlock from './../components/CodeBlock';
+import Button from './../../lib/components/Button'
 // import { Button } from '@matidiaz000/animeflv-clone-components'
 
 const ColorPage = () => {
@@ -34,7 +35,15 @@ const ColorPage = () => {
       </div>
       <h2 className="h4">Buttons</h2>
       <p>Bootstrap includes several button variants, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
-      <div className="border rounded-top rounded-top-4 border-bottom-0 p-3 border-light border-opacity-25">
+      <CodeBlock language="html" code={`<button type="button" className="btn btn-primary">Primary</button>
+<button type="button" className="btn btn-secondary">Secondary</button>
+<button type="button" className="btn btn-success">Success</button>
+<button type="button" className="btn btn-danger">Danger</button>
+<button type="button" className="btn btn-warning">Warning</button>
+<button type="button" className="btn btn-info">Info</button>
+<button type="button" className="btn btn-light">Light</button>
+<button type="button" className="btn btn-dark">Dark</button>
+<button type="button" className="btn btn-link">Link</button>`}>
         <button type="button" className="btn btn-primary">Primary</button>
         <button type="button" className="btn btn-secondary">Secondary</button>
         <button type="button" className="btn btn-success">Success</button>
@@ -44,21 +53,7 @@ const ColorPage = () => {
         <button type="button" className="btn btn-light">Light</button>
         <button type="button" className="btn btn-dark">Dark</button>
         <button type="button" className="btn btn-link">Link</button>
-      </div>
-      <div className="border rounded-bottom rounded-bottom-4 bg-dark border-light border-opacity-25 mw-100">
-        <pre className="py-0">
-            {`
-<button type="button" className="btn btn-primary">Primary</button>
-<button type="button" className="btn btn-secondary">Secondary</button>
-<button type="button" className="btn btn-success">Success</button>
-<button type="button" className="btn btn-danger">Danger</button>
-<button type="button" className="btn btn-warning">Warning</button>
-<button type="button" className="btn btn-info">Info</button>
-<button type="button" className="btn btn-light">Light</button>
-<button type="button" className="btn btn-dark">Dark</button>
-<button type="button" className="btn btn-link">Link</button>`}
-        </pre>
-      </div>
+      </CodeBlock>
       <h2 className="h4" id="what-is-vite">What is Vite?</h2>
       <p><a href="#">Vite</a> is a modern frontend build tool designed for speed and simplicity. It provides an efficient and streamlined development experience, especially for modern JavaScript frameworks.</p>
       <Button />

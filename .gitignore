@@ -26,3 +26,4 @@ dist-ssr
 # Others
 .npmrc
 .vite-react-ssg-temp
+vite.lib.config.timestamp-*

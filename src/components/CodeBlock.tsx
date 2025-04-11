@@ -1,6 +1,6 @@
 import { ReactNode, useEffect, useRef, useState } from 'react';
 import hljs from 'highlight.js';
-import styles from './index.module.scss'
+import styles from './CodeBlock.module.scss'
 
 interface IProps {
   children?: ReactNode;

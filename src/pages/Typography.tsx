@@ -1,5 +1,5 @@
-import CodeBlock from '../../components/CodeBlock';
-import { one, two, three, four, five, six, seven } from './codePart'
+import CodeBlock from '../components/CodeBlock';
+import { one, two, three, four, five, six, seven } from './Typography.codePart'
 
 const TypographyPage = () => {
   return (

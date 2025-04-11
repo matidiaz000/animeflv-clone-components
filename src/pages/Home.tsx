@@ -1,5 +1,5 @@
-import CodeBlock from '../../components/CodeBlock';
-import { one } from './codePart'
+import CodeBlock from '../components/CodeBlock';
+import { one } from './Home.codePart'
 
 const Home = () => {
   return (

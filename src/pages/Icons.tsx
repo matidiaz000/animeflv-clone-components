@@ -1,7 +1,8 @@
-import CodeBlock from '../../components/CodeBlock';
-import { one } from './codePart';
-import IconsJSON from './../../../lib/icomoon/selection.json'
+import CodeBlock from '../components/CodeBlock';
+import { one } from './Icons.codePart';
+import IconsJSON from '../../lib/icomoon/selection.json'
 //import { useState } from 'react';
+//import Icon from '../../lib/components/Icon'
 
 const IconsPage = () => {
   //const [isCopy, setIsCopy] = useState(false);
@@ -66,6 +67,11 @@ const IconsPage = () => {
             ))
           }
         </div>
+      </section>
+      <section className="mb-4">
+        <h2 className="h4" id="react-icomoon">react-icomoon</h2>
+        <p>Colorize text with color utilities. If you want to colorize links, you can use the .link-* helper classes which have :hover and :focus states.</p>
+{/*        <Icon icon="Accessibility" size={20} color="orange" />*/}
       </section>
     </>
   );

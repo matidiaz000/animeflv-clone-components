@@ -22,8 +22,8 @@ importers:
         specifier: ^9.21.0
         version: 9.24.0
       '@matidiaz000/animeflv-clone-components':
-        specifier: ^0.0.8
-        version: 0.0.8(bootstrap@5.3.5(@popperjs/core@2.11.8))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^0.0.20
+        version: 0.0.20(bootstrap@5.3.5(@popperjs/core@2.11.8))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/node':
         specifier: ^22.14.0
         version: 22.14.0
@@ -54,6 +54,9 @@ importers:
       highlight.js:
         specifier: ^11.11.1
         version: 11.11.1
+      react-icomoon:
+        specifier: ^2.6.1
+        version: 2.6.1(react@18.3.1)
       react-router-dom:
         specifier: ^6.30.0
         version: 6.30.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -394,8 +397,8 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
-  '@matidiaz000/animeflv-clone-components@0.0.8':
-    resolution: {integrity: sha512-dQIiN4JcWP74gV766YtKTdUYInG/W07WfXb6kLxr/UWzZZOM/3SSQtAFs01pzFDluKoKJrebADaft5dJqJK7EQ==, tarball: https://npm.pkg.github.com/download/@matidiaz000/animeflv-clone-components/0.0.8/9f8dd01b67ce5e53ca3088564dc5ea0b40e2f7d2}
+  '@matidiaz000/animeflv-clone-components@0.0.20':
+    resolution: {integrity: sha512-B0e6fkWpgb8fd3hPXbeBJKWQiuLAwGAr+SiTRWDoKwmF1mzVT66lxOPDpbbgrZGgajn3bKTYT/L/EcGJdWKq4g==, tarball: https://npm.pkg.github.com/download/@matidiaz000/animeflv-clone-components/0.0.20/9000f11c7faf6c80072d7934a5c89b4d9e34a930}
     peerDependencies:
       bootstrap: ^5.3.5
       react: ^18.3.1
@@ -1520,6 +1523,11 @@ packages:
       react: ^16.6.0 || ^17.0.0 || ^18.0.0
       react-dom: ^16.6.0 || ^17.0.0 || ^18.0.0
 
+  react-icomoon@2.6.1:
+    resolution: {integrity: sha512-vlIhoPnFtNFnbcEuTOgc1WEk8c+WPaZyYI10NvEK9nFJNvKJOnvYyAnMVMh0NugbtwdtFAgmd9TxIZOTX1f5UQ==}
+    peerDependencies:
+      react: ^16.4.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
 
@@ -2120,7 +2128,7 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
-  '@matidiaz000/animeflv-clone-components@0.0.8(bootstrap@5.3.5(@popperjs/core@2.11.8))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@matidiaz000/animeflv-clone-components@0.0.20(bootstrap@5.3.5(@popperjs/core@2.11.8))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       bootstrap: 5.3.5(@popperjs/core@2.11.8)
       react: 18.3.1
@@ -3300,6 +3308,10 @@ snapshots:
       react-dom: 18.3.1(react@18.3.1)
       react-fast-compare: 3.2.2
       shallowequal: 1.1.0
+
+  react-icomoon@2.6.1(react@18.3.1):
+    dependencies:
+      react: 18.3.1
 
   react-is@16.13.1: {}
 

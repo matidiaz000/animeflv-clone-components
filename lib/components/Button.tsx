@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import './styles.css'
 
 function Button() {
   const [count, setCount] = useState(0)

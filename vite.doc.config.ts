@@ -17,7 +17,4 @@ export default defineConfig({
       'Cross-Origin-Embedder-Policy': 'require-corp',
     },
   },
-  build: {
-    copyPublicDir: false
-  }
 } as UserConfig)
