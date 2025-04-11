@@ -1,10 +1,8 @@
 import { lazy } from "react";
-import { Navigate } from "react-router-dom";
 import type { RouteRecord } from 'vite-react-ssg'
 
 import Layout from "./layout";
 import Home from "./pages/Home";
-import Error from "./pages/Error";
 
 export const routes: RouteRecord[] = [
   {
@@ -15,14 +13,6 @@ export const routes: RouteRecord[] = [
       {
         index: true,
         Component: Home,
-      },
-      {
-        path: '404',
-        Component: Error,
-      },
-      {
-        path: '*',
-        element: <Navigate to="/404" replace />,
       },
       {
         path: 'card',
