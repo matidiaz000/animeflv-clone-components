@@ -1,5 +1,5 @@
 {
-  "version": "0.0.6",
+  "version": "0.0.7",
   "name": "@matidiaz000/animeflv-clone-components",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/matidiaz000"
@@ -26,7 +26,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
-    "@matidiaz000/animeflv-clone-components": "0.0.3",
+    "@matidiaz000/animeflv-clone-components": "0.0.6",
     "@types/node": "^22.14.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
@@ -49,8 +49,7 @@
   "files": [
     "dist"
   ],
-  "main": "./dist/lib/animeflv-clone-components.umd.cjs",
-  "module": "./dist/lib/animeflv-clone-components.js",
+  "main": "./dist/main.js",
   "types": "dist/main.d.ts",
   "exports": {
     ".": {
