@@ -32,10 +32,10 @@ importers:
         version: 19.1.0
       '@types/react-dom':
         specifier: ^19.0.4
-        version: 19.1.1(@types/react@19.1.0)
+        version: 19.1.2(@types/react@19.1.0)
       '@vitejs/plugin-react-swc':
         specifier: ^3.8.0
-        version: 3.8.1(vite@5.4.17(@types/node@22.14.0)(sass@1.64.2))
+        version: 3.8.1(vite@5.4.18(@types/node@22.14.0)(sass@1.64.2))
       clipboard:
         specifier: ^2.0.11
         version: 2.0.11
@@ -68,18 +68,79 @@ importers:
         version: 8.29.1(eslint@9.24.0)(typescript@5.7.3)
       vite:
         specifier: ^5.4.17
-        version: 5.4.17(@types/node@22.14.0)(sass@1.64.2)
+        version: 5.4.18(@types/node@22.14.0)(sass@1.64.2)
       vite-plugin-dts:
         specifier: ^4.5.3
-        version: 4.5.3(@types/node@22.14.0)(rollup@4.39.0)(typescript@5.7.3)(vite@5.4.17(@types/node@22.14.0)(sass@1.64.2))
+        version: 4.5.3(@types/node@22.14.0)(rollup@4.39.0)(typescript@5.7.3)(vite@5.4.18(@types/node@22.14.0)(sass@1.64.2))
+      vite-plugin-lib-inject-css:
+        specifier: ^2.2.2
+        version: 2.2.2(vite@5.4.18(@types/node@22.14.0)(sass@1.64.2))
       vite-react-ssg:
         specifier: ^0.8.5
-        version: 0.8.5(react-dom@18.3.1(react@18.3.1))(react-router-dom@6.30.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(vite@5.4.17(@types/node@22.14.0)(sass@1.64.2))
+        version: 0.8.5(react-dom@18.3.1(react@18.3.1))(react-router-dom@6.30.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(vite@5.4.18(@types/node@22.14.0)(sass@1.64.2))
 
 packages:
 
   '@asamuzakjp/css-color@3.1.1':
     resolution: {integrity: sha512-hpRD68SV2OMcZCsrbdkccTw5FXjNDLo5OuqSHyHZfwweGsDWZwDJ2+gONyNAbazZclobMirACLw0lk8WVxIqxA==}
+
+  '@ast-grep/napi-darwin-arm64@0.36.2':
+    resolution: {integrity: sha512-0dzW+5SRuUxAlfwgMiUWXSvvyVD3nffzLtH5RhH2a1VXbQxi2UFWZqtfhv6e27iIUTnPfZDnZGNRw8FZgttMfQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [darwin]
+
+  '@ast-grep/napi-darwin-x64@0.36.2':
+    resolution: {integrity: sha512-7TPdnq55OBXGcJLDARObI5BUFbp0AVRMGEzjnIBMWbRSowlDVTH7qBWwNAYk4auCdkwG8EBL40BUIHmagzpoCw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [darwin]
+
+  '@ast-grep/napi-linux-arm64-gnu@0.36.2':
+    resolution: {integrity: sha512-/h51eEnEYCq4bclzhynH+964LQXDKXgNb2Un+Y9TLOU8VRaGNawTkZkFq+iBp8T1hl0CznnsQQsg+9pHDHprHQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@ast-grep/napi-linux-arm64-musl@0.36.2':
+    resolution: {integrity: sha512-RIuk0VaQW2b5uOPJzuYFQBwMZIEVnp6maXPjnatUHxfniirSI172E7LtOU/FIEpCjU9Fpq23A79S43ImFt1KLA==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [linux]
+
+  '@ast-grep/napi-linux-x64-gnu@0.36.2':
+    resolution: {integrity: sha512-Xmb50HPfRNi+iLtHp+8/dqiTd8tjArYxOdj1tZzjRndpKhFpQDVrcOnPFObDCRgxVeLovdql9A1ad6BMcEL01Q==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+
+  '@ast-grep/napi-linux-x64-musl@0.36.2':
+    resolution: {integrity: sha512-RSnqCsl3OBfJWh2rETtv3o7xd4QnbB2YTh6H6oYfFhhX0tlon/V+bUXI77hU2/W73hj9GHqWZsygsF43NXn/Hw==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [linux]
+
+  '@ast-grep/napi-win32-arm64-msvc@0.36.2':
+    resolution: {integrity: sha512-/Q85h8F9K2G8qig0lndZWb+ykCfhfpSN27F3i7Aw5C0Ph7S6vFH76xn3l3dJTZb2CwUSsv4JNoqmFmY4B8DExQ==}
+    engines: {node: '>= 10'}
+    cpu: [arm64]
+    os: [win32]
+
+  '@ast-grep/napi-win32-ia32-msvc@0.36.2':
+    resolution: {integrity: sha512-bDdwErB7zf9DvRx3kNZyMKJb9by5ra24WAXSiVzI8MR387ibZP9UCTzKuGqPrbuZADYWiOgsg3nXMklyPFtmhQ==}
+    engines: {node: '>= 10'}
+    cpu: [ia32]
+    os: [win32]
+
+  '@ast-grep/napi-win32-x64-msvc@0.36.2':
+    resolution: {integrity: sha512-LVZ2DqP9fRfyUceE0BGnlKoPmSx3dYYApSEUdt82Pn7jEVWpFFyTLFmZ9ILiCSaVc6urMJpKWdxAHFqDNNlGfg==}
+    engines: {node: '>= 10'}
+    cpu: [x64]
+    os: [win32]
+
+  '@ast-grep/napi@0.36.2':
+    resolution: {integrity: sha512-ByenQQ0BtqqY0pvlmipvkDv/cKl/9vVjBydS7hloXOdmXPoUF0pHdlilC7ZfrRW97EzPQQZT2jgHl2tu7zg9QA==}
+    engines: {node: '>= 10'}
 
   '@babel/helper-string-parser@7.25.9':
     resolution: {integrity: sha512-4A/SCr/2KLd5jrtOMFzaKjVtAei3+2r/NChoBNoZ3EyP/+GlhoaEGoWOZUmFmoITP7zOJyHIMm+DYRd8o3PvHA==}
@@ -602,8 +663,8 @@ packages:
   '@types/node@22.14.0':
     resolution: {integrity: sha512-Kmpl+z84ILoG+3T/zQFyAJsU6EPTmOCj8/2+83fSN6djd6I4o7uOuGIH6vq3PrjY5BGitSbFuMN18j3iknubbA==}
 
-  '@types/react-dom@19.1.1':
-    resolution: {integrity: sha512-jFf/woGTVTjUJsl2O7hcopJ1r0upqoq/vIOoCj0yLh3RIXxWcljlpuZ+vEBRXsymD1jhfeJrlyTy/S1UW+4y1w==}
+  '@types/react-dom@19.1.2':
+    resolution: {integrity: sha512-XGJkWF41Qq305SKWEILa1O8vzhb3aOo3ogBlSmiqNko/WmRb6QIaweuZCXjKygVDXpzXb5wyxKTSOsmkuqj+Qw==}
     peerDependencies:
       '@types/react': ^19.0.0
 
@@ -1698,6 +1759,11 @@ packages:
       vite:
         optional: true
 
+  vite-plugin-lib-inject-css@2.2.2:
+    resolution: {integrity: sha512-NF30p0GwtfSAmVlxo2NgPXM2rEdtgV7LFi4lkzajKD7P3Ru/ZAFmI533M0Z5qyMZpvNMxVGkewzpjD0HOWtbDQ==}
+    peerDependencies:
+      vite: '*'
+
   vite-react-ssg@0.8.5:
     resolution: {integrity: sha512-IWzHFfak8YuwYZBRjsyrhtOWayMTm6kV3Uxi+Qec3fJJWS9rVWgvvLVhAxx6PxK7t+b8ca19Ox3tVMsrYV/ZFw==}
     hasBin: true
@@ -1728,8 +1794,8 @@ packages:
       styled-components:
         optional: true
 
-  vite@5.4.17:
-    resolution: {integrity: sha512-5+VqZryDj4wgCs55o9Lp+p8GE78TLVg0lasCH5xFZ4jacZjtqZa6JUw9/p0WeAojaOfncSM6v77InkFPGnvPvg==}
+  vite@5.4.18:
+    resolution: {integrity: sha512-1oDcnEp3lVyHCuQ2YFelM4Alm2o91xNoMncRm1U7S+JdYfYOvbiGZ3/CxGttrOu2M/KcGz7cRC2DoNUA6urmMA==}
     engines: {node: ^18.0.0 || >=20.0.0}
     hasBin: true
     peerDependencies:
@@ -1853,6 +1919,45 @@ snapshots:
       '@csstools/css-parser-algorithms': 3.0.4(@csstools/css-tokenizer@3.0.3)
       '@csstools/css-tokenizer': 3.0.3
       lru-cache: 10.4.3
+
+  '@ast-grep/napi-darwin-arm64@0.36.2':
+    optional: true
+
+  '@ast-grep/napi-darwin-x64@0.36.2':
+    optional: true
+
+  '@ast-grep/napi-linux-arm64-gnu@0.36.2':
+    optional: true
+
+  '@ast-grep/napi-linux-arm64-musl@0.36.2':
+    optional: true
+
+  '@ast-grep/napi-linux-x64-gnu@0.36.2':
+    optional: true
+
+  '@ast-grep/napi-linux-x64-musl@0.36.2':
+    optional: true
+
+  '@ast-grep/napi-win32-arm64-msvc@0.36.2':
+    optional: true
+
+  '@ast-grep/napi-win32-ia32-msvc@0.36.2':
+    optional: true
+
+  '@ast-grep/napi-win32-x64-msvc@0.36.2':
+    optional: true
+
+  '@ast-grep/napi@0.36.2':
+    optionalDependencies:
+      '@ast-grep/napi-darwin-arm64': 0.36.2
+      '@ast-grep/napi-darwin-x64': 0.36.2
+      '@ast-grep/napi-linux-arm64-gnu': 0.36.2
+      '@ast-grep/napi-linux-arm64-musl': 0.36.2
+      '@ast-grep/napi-linux-x64-gnu': 0.36.2
+      '@ast-grep/napi-linux-x64-musl': 0.36.2
+      '@ast-grep/napi-win32-arm64-msvc': 0.36.2
+      '@ast-grep/napi-win32-ia32-msvc': 0.36.2
+      '@ast-grep/napi-win32-x64-msvc': 0.36.2
 
   '@babel/helper-string-parser@7.25.9': {}
 
@@ -2271,7 +2376,7 @@ snapshots:
     dependencies:
       undici-types: 6.21.0
 
-  '@types/react-dom@19.1.1(@types/react@19.1.0)':
+  '@types/react-dom@19.1.2(@types/react@19.1.0)':
     dependencies:
       '@types/react': 19.1.0
 
@@ -2356,10 +2461,10 @@ snapshots:
       '@typescript-eslint/types': 8.29.1
       eslint-visitor-keys: 4.2.0
 
-  '@vitejs/plugin-react-swc@3.8.1(vite@5.4.17(@types/node@22.14.0)(sass@1.64.2))':
+  '@vitejs/plugin-react-swc@3.8.1(vite@5.4.18(@types/node@22.14.0)(sass@1.64.2))':
     dependencies:
       '@swc/core': 1.11.18
-      vite: 5.4.17(@types/node@22.14.0)(sass@1.64.2)
+      vite: 5.4.18(@types/node@22.14.0)(sass@1.64.2)
     transitivePeerDependencies:
       - '@swc/helpers'
 
@@ -3431,7 +3536,7 @@ snapshots:
       is-typed-array: 1.1.15
       which-typed-array: 1.1.19
 
-  vite-plugin-dts@4.5.3(@types/node@22.14.0)(rollup@4.39.0)(typescript@5.7.3)(vite@5.4.17(@types/node@22.14.0)(sass@1.64.2)):
+  vite-plugin-dts@4.5.3(@types/node@22.14.0)(rollup@4.39.0)(typescript@5.7.3)(vite@5.4.18(@types/node@22.14.0)(sass@1.64.2)):
     dependencies:
       '@microsoft/api-extractor': 7.52.3(@types/node@22.14.0)
       '@rollup/pluginutils': 5.1.4(rollup@4.39.0)
@@ -3444,13 +3549,20 @@ snapshots:
       magic-string: 0.30.17
       typescript: 5.7.3
     optionalDependencies:
-      vite: 5.4.17(@types/node@22.14.0)(sass@1.64.2)
+      vite: 5.4.18(@types/node@22.14.0)(sass@1.64.2)
     transitivePeerDependencies:
       - '@types/node'
       - rollup
       - supports-color
 
-  vite-react-ssg@0.8.5(react-dom@18.3.1(react@18.3.1))(react-router-dom@6.30.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(vite@5.4.17(@types/node@22.14.0)(sass@1.64.2)):
+  vite-plugin-lib-inject-css@2.2.2(vite@5.4.18(@types/node@22.14.0)(sass@1.64.2)):
+    dependencies:
+      '@ast-grep/napi': 0.36.2
+      magic-string: 0.30.17
+      picocolors: 1.1.1
+      vite: 5.4.18(@types/node@22.14.0)(sass@1.64.2)
+
+  vite-react-ssg@0.8.5(react-dom@18.3.1(react@18.3.1))(react-router-dom@6.30.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(react@18.3.1)(vite@5.4.18(@types/node@22.14.0)(sass@1.64.2)):
     dependencies:
       '@remix-run/web-fetch': 4.4.2
       fs-extra: 11.3.0
@@ -3461,7 +3573,7 @@ snapshots:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
       react-helmet-async: 1.3.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
-      vite: 5.4.17(@types/node@22.14.0)(sass@1.64.2)
+      vite: 5.4.18(@types/node@22.14.0)(sass@1.64.2)
       yargs: 17.7.2
     optionalDependencies:
       react-router-dom: 6.30.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
@@ -3471,7 +3583,7 @@ snapshots:
       - supports-color
       - utf-8-validate
 
-  vite@5.4.17(@types/node@22.14.0)(sass@1.64.2):
+  vite@5.4.18(@types/node@22.14.0)(sass@1.64.2):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.5.3

@@ -1,5 +1,5 @@
-// import '@matidiaz000/animeflv-clone-components/styles.css'
-import '../lib/styles.scss'
+// import '@matidiaz000/animeflv-clone-components/index.css'
+import './../lib/index.scss'
 import { ViteReactSSG } from 'vite-react-ssg'
 
 import { routes } from './App.tsx'
