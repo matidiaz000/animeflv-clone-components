@@ -1,5 +1,5 @@
 {
-  "version": "0.0.5",
+  "version": "0.0.6",
   "name": "@matidiaz000/animeflv-clone-components",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/matidiaz000"
@@ -17,7 +17,7 @@
     "build:doc": "tsc -b && vite-react-ssg build --config vite.doc.config",
     "lint": "eslint .",
     "preview": "vite preview",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "npm run build:lib"
   },
   "peerDependencies": {
     "bootstrap": "^5.3.5",
