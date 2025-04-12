@@ -2,7 +2,7 @@ import CodeBlock from '../components/CodeBlock';
 import { one } from './Icons.codePart';
 import IconsJSON from '../../lib/icomoon/selection.json'
 //import { useState } from 'react';
-//import Icon from '../../lib/components/Icon'
+import Icon from '../../lib/components/Icon'
 
 const IconsPage = () => {
   //const [isCopy, setIsCopy] = useState(false);
@@ -58,8 +58,9 @@ const IconsPage = () => {
             IconsJSON.icons.map((el: any) => (
               <div className="col-3 my-3" key={el.iconIdx}>
                 <div className="cursor-pointer" onClick={() => copy(`<i className="icon-${el.properties.name}"></i>`)}>
-                  <div className="d-flex flex-column justify-content-center border text-center bg-light rounded-4 p-3">
-                    <i className={`h2 fw-normal icon-${el.properties.name}`}></i>
+                  <div className="d-flex flex-column align-items-center border text-center bg-light rounded-4 p-3">
+                    {/*<i className={`h2 fw-normal icon-${el.properties.name}`}></i>*/}
+                    <Icon key={el.iconIdx} icon={el.properties.name} size={32} className="text-dark small m-3" />
                     <span className="small text-break">{el.properties.name}</span>
                   </div>
                 </div>
@@ -67,11 +68,6 @@ const IconsPage = () => {
             ))
           }
         </div>
-      </section>
-      <section className="mb-4">
-        <h2 className="h4" id="react-icomoon">react-icomoon</h2>
-        <p>Colorize text with color utilities. If you want to colorize links, you can use the .link-* helper classes which have :hover and :focus states.</p>
-{/*        <Icon icon="Accessibility" size={20} color="orange" />*/}
       </section>
     </>
   );
