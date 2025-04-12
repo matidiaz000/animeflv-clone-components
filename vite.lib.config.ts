@@ -4,7 +4,6 @@ import react from '@vitejs/plugin-react-swc'
 import { defineConfig } from 'vite'
 import dts from 'vite-plugin-dts'
 import { libInjectCss } from 'vite-plugin-lib-inject-css'
-import svgr from 'vite-plugin-svgr';
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
 
@@ -15,7 +14,6 @@ export default defineConfig((env) => ({
     react(),
     libInjectCss(),
     dts({ include: ['lib'], rollupTypes: true }),
-    svgr(),
   ],
   build: {
     lib: {
