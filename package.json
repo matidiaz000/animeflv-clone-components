@@ -25,7 +25,7 @@
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
-    "@matidiaz000/animeflv-clone-components": "^0.0.23",
+    "@matidiaz000/animeflv-clone-components": "^0.0.24",
     "@types/node": "^22.14.0",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",

@@ -3,7 +3,7 @@ import { one } from './Icons.codePart';
 import IconsJSON from '../../lib/icomoon/selection.json'
 //import { useState } from 'react';
 import { Icon } from '../../lib'
-// import { Icon } from '@matidiaz000/animeflv-clone-components'
+//import { Icon } from '@matidiaz000/animeflv-clone-components'
 
 const IconsPage = () => {
   //const [isCopy, setIsCopy] = useState(false);
