@@ -1,5 +1,5 @@
 import CodeBlock from './../components/CodeBlock';
-import Button from './../../lib/components/Button'
+import { Button } from './../../lib'
 // import { Button } from '@matidiaz000/animeflv-clone-components'
 
 const ColorPage = () => {

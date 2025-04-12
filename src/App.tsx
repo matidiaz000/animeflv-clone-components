@@ -1,8 +1,19 @@
 import { lazy } from "react";
 import type { RouteRecord } from 'vite-react-ssg'
 
-import Layout from "./layout";
-import Home from "./pages/Home";
+const Layout = lazy(() => import('./layout'))
+const Home = lazy(() => import('./pages/Home'))
+
+import Card from "./pages/Card";
+import Color from "./pages/Color";
+import Icons from "./pages/Icons";
+import Dropdown from "./pages/Dropdown";
+import Footer from "./pages/Footer";
+import Form from "./pages/Form";
+import Grid from "./pages/Grid";
+import Header from "./pages/Header";
+import Slide from "./pages/Slide";
+import Typography from "./pages/Typography";
 
 export const routes: RouteRecord[] = [
   {
@@ -16,43 +27,43 @@ export const routes: RouteRecord[] = [
       },
       {
         path: 'card',
-        Component: lazy(() => import('./pages/Card')),
+        Component: Card,
       },
       {
         path: 'color',
-        Component: lazy(() => import('./pages/Color')),
+        Component: Color,
       },
       {
         path: 'icons',
-        Component: lazy(() => import('./pages/Icons')),
+        Component: Icons,
       },
       {
         path: 'dropdown',
-        Component: lazy(() => import('./pages/Dropdown')),
+        Component: Dropdown,
       },
       {
         path: 'footer',
-        Component: lazy(() => import('./pages/Footer')),
+        Component: Footer,
       },
       {
         path: 'form',
-        Component: lazy(() => import('./pages/Form')),
+        Component: Form,
       },
       {
         path: 'grid',
-        Component: lazy(() => import('./pages/Grid')),
+        Component: Grid,
       },
       {
         path: 'header',
-        Component: lazy(() => import('./pages/Header')),
+        Component: Header,
       },
       {
         path: 'slide',
-        Component: lazy(() => import('./pages/Slide')),
+        Component: Slide,
       },
       {
         path: 'typography',
-        Component: lazy(() => import('./pages/Typography')),
+        Component: Typography,
       },
     ],
   },

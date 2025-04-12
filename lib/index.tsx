@@ -1,3 +1,3 @@
 import './index.scss'
-// eslint-disable-next-line react-refresh/only-export-components
-export * from './components';
+export { Button } from "./components/Button";
+export { Icon } from "./components/Icon";

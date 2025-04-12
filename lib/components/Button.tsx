@@ -1,18 +1,17 @@
 import { useState } from 'react'
 
-function Button() {
+export const Button = () => {
   const [count, setCount] = useState(0)
 
   return (
-    <div className="card">
-      <button onClick={() => setCount((count) => count + 1)}>
+    <div className="p-3 border rounded-lg">
+      <button className="btn btn-primary" onClick={() => setCount((count) => count + 1)}>
         count is {count}
       </button>
-      <p className='text-bg-primary p-3'>
+      <p className='bg-primary text-white p-3 mt-3'>
         Edit <code>src/App.tsx</code> and save to test HMR
       </p>
     </div>
   )
 }
 
-export default Button

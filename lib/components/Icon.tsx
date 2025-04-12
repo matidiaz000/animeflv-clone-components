@@ -31,7 +31,7 @@ interface IProps {
   [x: string]: any;
 }
 
-const Icon = ({ icon, size = 24, className = "", style = {}, ...rest }: IProps) => {
+export const Icon = ({ icon, size = 24, className = "", style = {}, ...rest }: IProps) => {
   return (
     <>
       {
@@ -59,5 +59,3 @@ const Icon = ({ icon, size = 24, className = "", style = {}, ...rest }: IProps) 
     </>
   );
 };
-
-export default Icon;
