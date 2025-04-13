@@ -1,7 +1,7 @@
 import { lazy } from "react";
 import type { RouteRecord } from 'vite-react-ssg'
 
-const Layout = lazy(() => import('./layout'))
+const Layout = lazy(() => import('./Layout'))
 const Home = lazy(() => import('./pages/Home'))
 
 import Card from "./pages/Card";
@@ -10,9 +10,8 @@ import Icons from "./pages/Icons";
 import Dropdown from "./pages/Dropdown";
 import Footer from "./pages/Footer";
 import Form from "./pages/Form";
-import Grid from "./pages/Grid";
 import Header from "./pages/Header";
-import Slide from "./pages/Slide";
+import Carousel from "./pages/Carousel";
 import Typography from "./pages/Typography";
 
 export const routes: RouteRecord[] = [
@@ -30,7 +29,7 @@ export const routes: RouteRecord[] = [
         Component: Card,
       },
       {
-        path: 'color',
+        path: 'colors',
         Component: Color,
       },
       {
@@ -50,16 +49,12 @@ export const routes: RouteRecord[] = [
         Component: Form,
       },
       {
-        path: 'grid',
-        Component: Grid,
-      },
-      {
         path: 'header',
         Component: Header,
       },
       {
-        path: 'slide',
-        Component: Slide,
+        path: 'carousel',
+        Component: Carousel,
       },
       {
         path: 'typography',

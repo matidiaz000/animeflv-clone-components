@@ -1,6 +1,7 @@
 import { ReactNode, useEffect, useRef, useState } from 'react';
 import hljs from 'highlight.js';
 import styles from './CodeBlock.module.scss'
+import { Alert, IAlert } from '../components/Alert';
 
 interface IProps {
   children?: ReactNode;
@@ -10,7 +11,8 @@ interface IProps {
 
 const CodeBlock = ({ children, code, language }: IProps) => {
   const codeRef = useRef(null);
-  const [isCopy, setIsCopy] = useState(false);
+  const [isCopy, setIsCopy] = useState<boolean>(false);
+  const [toasts, setToasts] = useState<IAlert[]>([]);
 
   useEffect(() => {
     if (codeRef && codeRef.current) {
@@ -20,14 +22,30 @@ const CodeBlock = ({ children, code, language }: IProps) => {
 
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const copy = (e: any) => {
-    navigator.clipboard.writeText(code);
     e.target.focus();
-    setIsCopy(true);
-    setTimeout(() => setIsCopy(false), 2000)
+    navigator.clipboard.writeText(code);
+    showToast("The code was copied to the clipboard", "success");
   }
+
+  const showToast = (message: IAlert["message"], type: IAlert["type"]) => {
+    const toast: IAlert = {
+      id: Date.now().toString(),
+      message,
+      type,
+    };
+
+    setToasts((prevToasts) => [...prevToasts, toast]);
+    setIsCopy(true)
+
+    setTimeout(() => {
+      setIsCopy(false)
+      setToasts((prevToasts) => prevToasts.filter((t) => t.id !== toast.id));
+    }, 2000);
+  };
 
   return (
     <div className="mb-2">
+      <Alert data={toasts} />
       {children && (
         <div className="border rounded-top rounded-top-4 border-bottom-0 p-3">
         {children}
