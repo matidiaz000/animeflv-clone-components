@@ -1,12 +1,21 @@
 import { ReactNode, useEffect, useRef, useState } from 'react';
-import hljs from 'highlight.js';
+import hljs from 'highlight.js/lib/core';
 import styles from './CodeBlock.module.scss'
 import { Alert, IAlert } from '../components/Alert';
+import typescript from 'highlight.js/lib/languages/typescript';
+import scss from 'highlight.js/lib/languages/scss';
+import xml from 'highlight.js/lib/languages/xml';
+import bash from 'highlight.js/lib/languages/shell';
+
+hljs.registerLanguage('command', bash);
+hljs.registerLanguage('js', typescript);
+hljs.registerLanguage('html', xml);
+hljs.registerLanguage('css', scss);
 
 interface IProps {
   children?: ReactNode;
   code: string;
-  language: 'javascript' | 'js' | 'typescript' | 'ts' | 'tsx' | 'css' | 'scss' | 'xml' | 'html' | 'xhtml' | 'plaintext';
+  language: 'js' | 'css' | 'html' | 'command';
 }
 
 const CodeBlock = ({ children, code, language }: IProps) => {
