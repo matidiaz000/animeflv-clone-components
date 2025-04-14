@@ -36,7 +36,7 @@ export const NavList: INav[] = [
       { id: 1, external: false, description: "Dropdown", link: "/dropdown" },
       { id: 2, external: false, description: "Card", link: "/card" },
       { id: 3, external: false, description: "Header", link: "/header" },
-      { id: 4, external: false, description: "Introduction", link: "/carousel" },
+      { id: 4, external: false, description: "Carousel", link: "/carousel" },
       { id: 5, external: false, description: "Footer", link: "/footer" },
     ]
   },
