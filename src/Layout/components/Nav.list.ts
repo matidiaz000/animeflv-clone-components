@@ -11,7 +11,7 @@ export const NavList: INav[] = [
     icon: "menu_book",
     title: "Getting started",
     nav: [
-      { id: 0, external: false, description: "Introduction", link: "/" },
+      { id: 0, external: false, description: "Overview", link: "/" },
       { id: 1, external: true, description: "Breakpoints", link: "/layout/breakpoints/" },
       { id: 2, external: true, description: "Containers", link: "/layout/containers/" },
       { id: 3, external: true, description: "Grid", link: "/layout/grid/" },
@@ -24,7 +24,14 @@ export const NavList: INav[] = [
     icon: "rule",
     title: "Forms",
     nav: [
-      { id: 0, external: false, description: "Form", link: "/form" },
+      { id: 0, external: false, description: "Overview", link: "/" },
+      { id: 0, external: false, description: "Buttons", link: "/button" },
+      { id: 0, external: false, description: "Text Field", link: "/form" },
+      { id: 0, external: false, description: "Search", link: "/form" },
+      { id: 0, external: false, description: "Checkbox & Radio", link: "/form" },
+      { id: 0, external: false, description: "Rating", link: "/form" },
+      { id: 0, external: false, description: "Switch", link: "/form" },
+      { id: 0, external: false, description: "Validation", link: "/form" },
     ]
   },
   {
@@ -32,7 +39,9 @@ export const NavList: INav[] = [
     icon: "smart_button",
     title: "Components",
     nav: [
+      { id: 0, external: false, description: "Overview", link: "/" },
       { id: 0, external: false, description: "Icons", link: "/icons" },
+      { id: 0, external: false, description: "Chips", link: "/chip" },
       { id: 1, external: false, description: "Dropdown", link: "/dropdown" },
       { id: 2, external: false, description: "Card", link: "/card" },
       { id: 3, external: false, description: "Header", link: "/header" },
@@ -45,8 +54,9 @@ export const NavList: INav[] = [
     icon: "data_object",
     title: "Utilities",
     nav: [
+      { id: 0, external: false, description: "Overview", link: "/" },
       { id: 0, external: false, description: "Colors", link: "/colors" },
-      { id: 1, external: true, description: "Borders", link: "/utilities/borders" },
+      { id: 1, external: false, description: "Borders", link: "/" },
       { id: 2, external: true, description: "Display", link: "/utilities/display" },
       { id: 3, external: true, description: "Flex", link: "/utilities/flex" },
       { id: 4, external: true, description: "Opacity", link: "/utilities/opacity" },

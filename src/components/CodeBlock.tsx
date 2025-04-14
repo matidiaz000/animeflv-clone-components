@@ -60,7 +60,7 @@ const CodeBlock = ({ children, code, language }: IProps) => {
         {children}
       </div>
       )}
-      <pre className={`m-0 w-100 position-relative ${children ? 'rounded-bottom rounded-bottom-4' : 'rounded rounded-4'}`}>
+      <pre className={`m-0 w-100 position-relative bg-dark font-monospace ${children ? 'rounded-bottom rounded-bottom-4' : 'rounded rounded-4'}`}>
         <button
           className={`btn border-0 text-light ${styles.copyBtn}`}
           onClick={copy}

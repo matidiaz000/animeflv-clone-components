@@ -18,3 +18,10 @@ i {
 .card {
   padding: 2em;
 }
+
+@each $color, $value in $theme-colors {
+  .watercolor-#{$color} {
+    color: $value;
+    background-color: rgba($value, .15);
+  }
+}
