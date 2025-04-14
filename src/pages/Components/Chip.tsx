@@ -1,8 +1,8 @@
-import CodeBlock from './../components/CodeBlock';
-import { Button } from './../../lib'
+import CodeBlock from '../../components/CodeBlock';
+import { Button } from '../../../lib'
 //import { Button } from '@matidiaz000/animeflv-clone-components'
 
-const ButtonPage = () => {
+const ChipPage = () => {
   return (
     <>
       <h1>Colors, buttons and badges</h1>
@@ -82,4 +82,4 @@ const ButtonPage = () => {
   );
 };
 
-export default ButtonPage;
+export default ChipPage;

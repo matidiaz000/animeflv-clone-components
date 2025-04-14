@@ -1,4 +1,4 @@
-import CodeBlock from '../components/CodeBlock';
+import CodeBlock from '../../components/CodeBlock';
 import { one, two, three, four, five, six, seven } from './Typography.codePart'
 
 const TypographyPage = () => {

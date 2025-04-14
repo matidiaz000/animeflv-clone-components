@@ -6,10 +6,10 @@ import { AsideComponent } from './components/Aside';
 const Layout = () => {
   return (
     <>
+      <aside id="aside-nav" className="bg-dark position-fixed overflow-auto h-100 top-0 w-100 ps-4">
+        <NavComponent />
+      </aside>
       <div className="container row gx-5 h-100 position-relative">
-        <aside className="col-3 bg-dark position-absolute overflow-auto h-100">
-          <NavComponent />
-        </aside>
         <div className="col-3"></div>
         <main className="col row gx-5 ,t">
           <div className="col">

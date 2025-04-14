@@ -2,17 +2,22 @@ import { lazy } from "react";
 import type { RouteRecord } from 'vite-react-ssg'
 
 const Layout = lazy(() => import('./Layout'))
-const Home = lazy(() => import('./pages/Home'))
+const Home = lazy(() => import('./pages/GettingStarted/Home'))
 
-import Card from "./pages/Card";
-import Color from "./pages/Color";
-import Icons from "./pages/Icons";
-import Dropdown from "./pages/Dropdown";
-import Footer from "./pages/Footer";
-import Form from "./pages/Form";
-import Header from "./pages/Header";
-import Carousel from "./pages/Carousel";
-import Typography from "./pages/Typography";
+import Typography from "./pages/GettingStarted/Typography";
+
+import Button from "./pages/Components/Button";
+import Card from "./pages/Components/Card";
+import Carousel from "./pages/Components/Carousel";
+import Chip from "./pages/Components/Chip";
+import Dropdown from "./pages/Components/Dropdown";
+import Footer from "./pages/Components/Footer";
+import Header from "./pages/Components/Header";
+import Icons from "./pages/Components/Icons";
+
+import Form from "./pages/Forms/Form";
+
+import Color from "./pages/Utilities/Color";
 
 export const routes: RouteRecord[] = [
   {
@@ -27,6 +32,14 @@ export const routes: RouteRecord[] = [
       {
         path: 'card',
         Component: Card,
+      },
+      {
+        path: 'button',
+        Component: Button,
+      },
+      {
+        path: 'chip',
+        Component: Chip,
       },
       {
         path: 'colors',

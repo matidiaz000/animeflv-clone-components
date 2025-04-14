@@ -1,5 +1,5 @@
-import { Header as HeaderComponent } from '../../lib'
-import AnimeFLVLogo from './../assets/logo.png'
+import { Header as HeaderComponent } from '../../../lib'
+import AnimeFLVLogo from '../../assets/logo.png'
 
 const Header = () => {
   return (

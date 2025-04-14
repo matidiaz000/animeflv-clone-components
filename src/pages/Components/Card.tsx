@@ -1,5 +1,5 @@
-import { Card } from '../../lib'
-import CodeBlock from '../components/CodeBlock';
+import { Card } from '../../../lib'
+import CodeBlock from '../../components/CodeBlock';
 import { one, two, three, four } from './Card.codePart';
 
 const CardPage = () => {

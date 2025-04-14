@@ -1,10 +1,10 @@
 import { useState } from 'react';
-import CodeBlock from '../components/CodeBlock';
+import CodeBlock from '../../components/CodeBlock';
 import { one } from './Icons.codePart';
-import IconsJSON from '../../lib/icomoon/selection.json'
-import { Icon } from '../../lib'
+import IconsJSON from '../../../lib/icomoon/selection.json'
+import { Icon } from '../../../lib'
 //import { Icon } from '@matidiaz000/animeflv-clone-components'
-import { Alert, IAlert } from '../components/Alert';
+import { Alert, IAlert } from '../../components/Alert';
 
 const IconsPage = () => {
   const [searchText, setSearchText] = useState("");
