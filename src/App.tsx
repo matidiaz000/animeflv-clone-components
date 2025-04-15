@@ -9,7 +9,6 @@ import Typography from "./pages/GettingStarted/Typography";
 import Button from "./pages/Components/Button";
 import Card from "./pages/Components/Card";
 import Carousel from "./pages/Components/Carousel";
-import Chip from "./pages/Components/Chip";
 import Dropdown from "./pages/Components/Dropdown";
 import Footer from "./pages/Components/Footer";
 import Header from "./pages/Components/Header";
@@ -36,10 +35,6 @@ export const routes: RouteRecord[] = [
       {
         path: 'button',
         Component: Button,
-      },
-      {
-        path: 'chip',
-        Component: Chip,
       },
       {
         path: 'colors',

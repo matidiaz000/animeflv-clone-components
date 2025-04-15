@@ -5,79 +5,109 @@ import { Button } from '../../../lib'
 const ButtonPage = () => {
   return (
     <>
-      <h1>Colors, buttons and badges</h1>
-      <p>We use a subset of all colors to create a smaller color palette for generating color schemes, also available as Sass variables and a Sass map in Bootstrap’s <code>scss/_variables.scss</code> file.</p>
-      <button type="button" className="watercolor-dark border-0 rounded-2 mb-3 px-3 py-2 fw-medium">DEFAULT</button>
-      <br/>
-      <button type="button" className="watercolor-danger border-0 rounded-2 mb-3 px-3 py-2 fw-medium">PELICULA</button>
-      <br/>
-      <button type="button" className="watercolor-primary-600 border-0 rounded-2 mb-3 px-3 py-2 fw-medium">SERIE</button>
-      <br/>
-      <button type="button" className="watercolor-secondary-600 border-0 rounded-2 mb-3 px-3 py-2 fw-medium">OVA</button>
-      <br/>
-      <div className="row">
-        <div className="col-md-4">
-          <div className="p-3 mb-3 text-bg-primary rounded-3">Primary</div>
-        </div>
-        <div className="col-md-4">
-          <div className="p-3 mb-3 text-bg-secondary rounded-3">Secondary</div>
-        </div>
-        <div className="col-md-4">
-          <div className="p-3 mb-3 text-bg-success rounded-3">Success</div>
-        </div>
-        <div className="col-md-4">
-          <div className="p-3 mb-3 text-bg-danger rounded-3">Danger</div>
-        </div>
-        <div className="col-md-4">
-          <div className="p-3 mb-3 text-bg-warning rounded-3">Warning</div>
-        </div>
-        <div className="col-md-4">
-          <div className="p-3 mb-3 text-bg-info rounded-3">Info</div>
-        </div>
-        <div className="col-md-4">
-          <div className="p-3 mb-3 text-bg-light rounded-3">Light</div>
-        </div>
-        <div className="col-md-4">
-          <div className="p-3 mb-3 text-bg-dark rounded-3">Dark</div>
-        </div>
-      </div>
-      <h2 className="h4">Buttons</h2>
-      <p>Bootstrap includes several button variants, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
-      <CodeBlock language="html" code={`<button type="button" className="btn btn-primary">Primary</button>
-<button type="button" className="btn btn-secondary">Secondary</button>
-<button type="button" className="btn btn-success">Success</button>
-<button type="button" className="btn btn-danger">Danger</button>
-<button type="button" className="btn btn-warning">Warning</button>
-<button type="button" className="btn btn-info">Info</button>
-<button type="button" className="btn btn-light">Light</button>
-<button type="button" className="btn btn-dark">Dark</button>
-<button type="button" className="btn btn-link">Link</button>`}>
-        <button type="button" className="btn btn-primary">Primary</button>
-        <button type="button" className="btn btn-secondary">Secondary</button>
-        <button type="button" className="btn btn-success">Success</button>
-        <button type="button" className="btn btn-danger">Danger</button>
-        <button type="button" className="btn btn-warning">Warning</button>
-        <button type="button" className="btn btn-info">Info</button>
-        <button type="button" className="btn btn-light">Light</button>
-        <button type="button" className="btn btn-dark">Dark</button>
-        <button type="button" className="btn btn-link">Link</button>
-      </CodeBlock>
-      <h2 className="h4" id="what-is-vite">What is Vite?</h2>
-      <p><a href="#">Vite</a> is a modern frontend build tool designed for speed and simplicity. It provides an efficient and streamlined development experience, especially for modern JavaScript frameworks.</p>
-      <Button />
-      <h2 className="h4" id="variants">Buttons</h2>
-      <p>Bootstrap includes several button variants, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
-      <div className="bd-example m-0 border-0">
-        <button type="button" className="btn text-white">Nav button</button>
-        <button type="button" className="btn bg-white text-black text-opacity-50 text-uppercase">Ver todo</button>
-        <button type="button" className="btn bg-light bg-opacity-25">Footer</button>
-        <button type="button" className="btn btn-primary">Ordernar</button>
-        <span className="badge text-dark bg-light bg-opacity-25 text-opacity-75">Default</span>
-        <span className="badge text-bg-primary">Pelicula</span>
-        <span className="badge text-bg-primary">Serie</span>
-        <span className="badge text-bg-primary">OVA</span>
-        <span className="badge text-bg-primary">24m</span>
-      </div>
+      <h1>Buttons</h1>
+      <p>Use AnimeFLV custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+      <section className="mb-4">
+        <h2 className="h4" id="variants">Variants</h2>
+        <p>The <code>Button</code> comes with three variants: text (default), contained, and outlined.</p>
+        <CodeBlock language="html" code={`<Button variant="text">Text</Button>
+<Button variant="contained">Contained</Button>
+<Button variant="outlined">Outlined</Button>
+<Button variant="watercolor">Watercolor</Button>`}>
+          <div className="d-flex justify-content-center">
+            <Button className="mx-2" variant="text" color="primary">Text</Button>
+            <Button className="mx-2" variant="contained" color="primary">Contained</Button>
+            <Button className="mx-2" variant="outlined" color="primary">Outlined</Button>
+            <Button className="mx-2" variant="watercolor" color="primary">Watercolor</Button>
+          </div>
+        </CodeBlock>
+      </section>
+      <section className="mb-4">
+        <h2 className="h4" id="button-tags">Button tags</h2>
+        <p>The <code>Button</code> are designed to be used with the <code>{`<button>`}</code> element. However, you can also use these component with <code>{`<a>`}</code>, <code>{`<span>`}</code>, <code>{`<input>`}</code> elements or <code>{`<NavLink>`} (component of 'react-router-dom' library)</code>.</p>
+        <CodeBlock language="html" code={`<Button>Text</Button> // <button>Text</button>
+<Button span>Span</Button> // <span>Span</span>
+<Button disabled>Input</Button> // <input type="button />
+<Button href="#">Router</Button> // <NavLink to="#">Router</NavLink>
+<Button href="#" reload>Router</Button> // <NavLink to="#" reloadDocument>Router</NavLink>
+<Button href="#" external>Hyperlink</Button> // <a href="#" target="_blank>Hyperlink</a>`}> 
+          <div className="d-flex justify-content-center">
+            <Button className="mx-2" color="primary" variant="contained">Text</Button>
+            <Button className="mx-2" color="primary" variant="contained" span>Span</Button>
+            <Button className="mx-2" color="primary" variant="contained" disabled>Input</Button>
+            <Button className="mx-2" color="primary" variant="contained" href="#">Router</Button>
+            <Button className="mx-2" color="primary" variant="contained" href="#" external>Hyperlink</Button>
+          </div>
+        </CodeBlock>
+      </section>
+      <section className="mb-4">
+        <h2 className="h4" id="color">Color</h2>
+        <p>AnimeFLV includes several button variants, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+        <CodeBlock language="html" code={`<Button color="secondary">Secondary</Button>
+<Button color="success" variant="contained">Success</Button>
+<Button color="danger" variant="outlined">Danger</Button>
+<Button color="info" variant="watercolor">Info</Button>`}>
+          <div className="d-flex justify-content-center">
+            <Button className="mx-2" color="secondary" variant="text">Secondary</Button>
+            <Button className="mx-2" color="success" variant="contained">Success</Button>
+            <Button className="mx-2" color="danger" variant="outlined">Danger</Button>
+            <Button className="mx-2" color="info" variant="watercolor">Info</Button>
+          </div>
+        </CodeBlock>
+      </section>
+      <section className="mb-4">
+        <h2 className="h4" id="color">Sizes</h2>
+        <p>AnimeFLV includes several button variants, each serving its own semantic purpose, with a few extras thrown in for more control.</p>
+        <CodeBlock language="html" code={`<Button size="sm">Small</Button>
+<Button size="md">Middle</Button>
+<Button size="lg">Large</Button>`}>
+          <div className="d-flex justify-content-center">
+            <Button className="mx-2" color="primary" variant="contained" size="sm">Small</Button>
+            <Button className="mx-2" color="primary" variant="contained" size="md">Middle</Button>
+            <Button className="mx-2" color="primary" variant="contained" size="lg">Large</Button>
+          </div>
+        </CodeBlock>
+      </section>
+      <section className="mb-4">
+        <h2 className="h4" id="color">With icon</h2>
+        <p>Sometimes you might want to have icons for certain buttons to enhance the UX of the application as we recognize logos more easily than plain text. For example, if you have a delete button you can label it with a dustbin icon.</p>
+        <CodeBlock language="html" code={`<Button variant="outlined" startIcon="Progress-Activity">
+  Loading
+</Button>
+<Button variant="contained" endIcon="Add_plus">
+  Add more
+</Button>`}>
+          <div className="d-flex justify-content-center">
+            <Button className="mx-2" color="primary" variant="outlined" startIcon="Progress-Activity">Loading</Button>
+            <Button className="mx-2" color="primary" variant="contained" endIcon="Add_plus">Add more</Button>
+          </div>
+        </CodeBlock>
+      </section>
+      <section className="mb-4">
+        <h2 className="h4" id="color">Only icon</h2>
+        <p>Sometimes you might want to have icons for certain buttons to enhance the UX of the application as we recognize logos more easily than plain text. For example, if you have a delete button you can label it with a dustbin icon.</p>
+        <CodeBlock language="html" code={`<Button startIcon="Calendar_Days" />
+<Button startIcon="Devices" disabled />
+<Button startIcon="House_01" color="primary" />`}>
+          <div className="d-flex justify-content-center">
+            <Button className="mx-2" startIcon="Calendar_Days" />
+            <Button className="mx-2" startIcon="Devices" disabled />
+            <Button className="mx-2" startIcon="House_01" color="primary" />
+          </div>
+        </CodeBlock>
+      </section>
+      <section className="mb-4">
+        <h2 className="h4" id="borders">More</h2>
+        <CodeBlock language="html" code={`<Button className="shadow">Shadow</Button>
+<Button className="rounded-pill">Border Pill</Button>
+<Button className="rounded-circle p-2" startIcon="Hamburger_LG" />`}>
+          <div className="d-flex justify-content-center">
+            <Button variant="contained" color="primary" className="mx-2 shadow">Shadow</Button>
+            <Button variant="contained" color="primary" className="mx-2 rounded-pill">Border Pill</Button>
+            <Button variant="contained" color="primary" className="mx-2 rounded-circle p-2" startIcon="Hamburger_LG" />
+          </div>
+        </CodeBlock>
+      </section>
     </>
   );
 };

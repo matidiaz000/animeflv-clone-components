@@ -79,7 +79,7 @@ const IconsPage = () => {
             // eslint-disable-next-line @typescript-eslint/no-explicit-any
             filteredIcons.map((el: any) => (
               <div className="col-3 my-3" key={el.iconIdx}>
-                <div className="cursor-pointer" onClick={() => copy(`<i className="icon-${el.properties.name}"></i>`)}>
+                <div className="cursor-pointer" onClick={() => copy(el.properties.name)}>
                   <div className="d-flex flex-column align-items-center border text-center bg-light rounded-4 p-3">
                     <Icon key={el.iconIdx} icon={el.properties.name} size={32} className="text-dark small m-3" />
                     <span className="small text-break">{el.properties.name}</span>

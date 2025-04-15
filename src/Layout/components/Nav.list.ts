@@ -41,7 +41,6 @@ export const NavList: INav[] = [
     nav: [
       { id: 0, external: false, description: "Overview", link: "/" },
       { id: 0, external: false, description: "Icons", link: "/icons" },
-      { id: 0, external: false, description: "Chips", link: "/chip" },
       { id: 1, external: false, description: "Dropdown", link: "/dropdown" },
       { id: 2, external: false, description: "Card", link: "/card" },
       { id: 3, external: false, description: "Header", link: "/header" },
