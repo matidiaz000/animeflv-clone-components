@@ -1,54 +1,74 @@
-# React + TypeScript + Vite
+# AnimeFLV Clone Components
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[!NOTE]
+Este proyecto es un clon del sitio de AnimeFLV y esta desarrollado con propositos de demostración en mi portfolio, no es un proyecto official.
 
-Currently, two official plugins are available:
+Libreria para conectar los componentes y estilos en un solo lugar, a demas de albergar la documentación de la misma.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Microfrontend
 
-## Expanding the ESLint configuration
+Este proyecto utiliza la metodologia de microfrontend, por lo tanto el proyecto en si cuenta con diferentes modulos interconectados. 
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+> **Libreria**
+> name: animeflv-clone-components
+> github: https://github.com/matidiaz000/animeflv-clone-components/
+> demo: https://animeflv-clone-components.vercel.app/
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+> **Configuración**
+> name: animeflv-clone-host
+> github: https://github.com/matidiaz000/animeflv-clone-host/
+> demo: https://animeflv-clone-host.vercel.app/
+
+> **Inicio**
+> name: animeflv-clone-home
+> github: https://github.com/matidiaz000/animeflv-clone-home/
+> demo: https://animeflv-clone-home.vercel.app/
+
+> **Animes**
+> name: animeflv-clone-list
+> github: https://github.com/matidiaz000/animeflv-clone-list/
+> demo: https://animeflv-clone-list.vercel.app/
+
+> **Capitulo**
+> name: animeflv-clone-chapter
+> github: https://github.com/matidiaz000/animeflv-clone-chapter/
+> demo: https://animeflv-clone-chapter.vercel.app/
+
+## Installation
+
+Run one of the following commands to add AnimeFLV UI to your project:
+
+Using npm
+
+```bash
+npm install @matidiaz000/animeflv-clone-components
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Using yarn
+
+```bash
+yarn install @matidiaz000/animeflv-clone-components
+```
+
+Using pnpm
+
+```bash
+pnpm install @matidiaz000/animeflv-clone-components
+```
+
+## Usage
+
+Once the package is installed, you can import the library using import or require approach:
 
 ```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+import "@matidiaz000/animeflv-clone-components/styles.css"
+import { Button } from "@matidiaz000/animeflv-clone-components"
 ```
+
+## Documentation
+
+Get started in the AnimeFLV Clone Components [documentation](https://animeflv-clone-components.vercel.app/).
+
+## Description
+
+Este proyecto es para mostrar mis conocimientos en Microfrontend, Clean Architecture, SSG (Static Site Generator), ci/cd, Develop npm library & React + Vite + SASS.
