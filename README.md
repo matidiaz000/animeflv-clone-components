@@ -1,7 +1,7 @@
 # AnimeFLV Clone Components
 
-[!NOTE]
-Este proyecto es un clon del sitio de AnimeFLV y esta desarrollado con propositos de demostración en mi portfolio, no es un proyecto official.
+> [!WARNING]
+> Este proyecto es un clon del sitio de AnimeFLV y esta desarrollado con propositos de demostración en mi portfolio, no es un proyecto official.
 
 Libreria para conectar los componentes y estilos en un solo lugar, a demas de albergar la documentación de la misma.
 
@@ -10,29 +10,34 @@ Libreria para conectar los componentes y estilos en un solo lugar, a demas de al
 Este proyecto utiliza la metodologia de microfrontend, por lo tanto el proyecto en si cuenta con diferentes modulos interconectados. 
 
 > **Libreria**
-> name: animeflv-clone-components
-> github: https://github.com/matidiaz000/animeflv-clone-components/
-> demo: https://animeflv-clone-components.vercel.app/
+> 
+> - name: animeflv-clone-components
+> - github: https://github.com/matidiaz000/animeflv-clone-components/
+> - demo: https://animeflv-clone-components.vercel.app/
 
 > **Configuración**
-> name: animeflv-clone-host
-> github: https://github.com/matidiaz000/animeflv-clone-host/
-> demo: https://animeflv-clone-host.vercel.app/
+> 
+> - name: animeflv-clone-host
+> - github: https://github.com/matidiaz000/animeflv-clone-host/
+> - demo: https://animeflv-clone-host.vercel.app/
 
 > **Inicio**
-> name: animeflv-clone-home
-> github: https://github.com/matidiaz000/animeflv-clone-home/
-> demo: https://animeflv-clone-home.vercel.app/
+> 
+> - name: animeflv-clone-home
+> - github: https://github.com/matidiaz000/animeflv-clone-home/
+> - demo: https://animeflv-clone-home.vercel.app/
 
 > **Animes**
-> name: animeflv-clone-list
-> github: https://github.com/matidiaz000/animeflv-clone-list/
-> demo: https://animeflv-clone-list.vercel.app/
+> 
+> - name: animeflv-clone-list
+> - github: https://github.com/matidiaz000/animeflv-clone-list/
+> - demo: https://animeflv-clone-list.vercel.app/
 
 > **Capitulo**
-> name: animeflv-clone-chapter
-> github: https://github.com/matidiaz000/animeflv-clone-chapter/
-> demo: https://animeflv-clone-chapter.vercel.app/
+> 
+> - name: animeflv-clone-chapter
+> - github: https://github.com/matidiaz000/animeflv-clone-chapter/
+> - demo: https://animeflv-clone-chapter.vercel.app/
 
 ## Installation
 
