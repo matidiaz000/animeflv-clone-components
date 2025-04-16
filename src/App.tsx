@@ -13,6 +13,7 @@ import Dropdown from "./pages/Components/Dropdown";
 import Footer from "./pages/Components/Footer";
 import Header from "./pages/Components/Header";
 import Icons from "./pages/Components/Icons";
+import IconList from "./pages/Components/IconList";
 
 import Form from "./pages/Forms/Form";
 
@@ -43,6 +44,10 @@ export const routes: RouteRecord[] = [
       {
         path: 'icons',
         Component: Icons,
+      },
+      {
+        path: 'iconlist',
+        Component: IconList,
       },
       {
         path: 'dropdown',

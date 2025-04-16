@@ -3,7 +3,7 @@ import type { IColors } from '../../lib'
 import { Icon } from '../../lib'
 
 interface IProps {
-  variant?: 'text' | 'contained' | 'outlined' | 'watercolor'
+  variant: 'text' | 'contained' | 'outlined' | 'watercolor'
   children?: React.ReactNode,
   href?: string,
   reload?: boolean,
@@ -15,12 +15,15 @@ interface IProps {
   startIcon?: string,
   endIcon?: string,
   className: string
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  [x: string]: any;
 }
 
 export const Button = ({variant, children, href, reload, external, disabled, color, span, size, startIcon, endIcon, className, ...rest}: IProps) => {
   const getClass = () => `
     btn 
     text-decoration-none
+    ${!className.includes("rounded") && "rounded-pill"}
     ${disabled ? `disabled` : ""}
     ${color && variant == 'text' ? `text-${color} border-0` : ""}
     ${color && variant == 'contained' ? `btn-${color}` : ""}
@@ -29,6 +32,7 @@ export const Button = ({variant, children, href, reload, external, disabled, col
     ${size == 'sm' ? `btn-sm` : ""}
     ${size == 'md' ? `` : ""}
     ${size == 'lg' ? `btn-lg` : ""}
+    ${startIcon && !children && !endIcon ? "rounded-circle border-0 lh-0 p-2" : ""}
     ${className}
   `;
 

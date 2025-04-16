@@ -25,13 +25,12 @@ interface IconSet {
 interface IProps {
   size?: string | number;
   icon: string;
-  className?: string;
   style?: React.CSSProperties;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [x: string]: any;
 }
 
-export const Icon = ({ icon, size = 24, className = "", style = {}, ...rest }: IProps) => {
+export const Icon = ({ icon, size = 24, style = {}, ...rest }: IProps) => {
   return (
     <>
       {
@@ -40,7 +39,6 @@ export const Icon = ({ icon, size = 24, className = "", style = {}, ...rest }: I
             return (
               <svg
                 key={el.iconIdx}
-                className={className}
                 style={{overflow: "visible", ...style}}
                 width={size}
                 height={size}
@@ -50,7 +48,7 @@ export const Icon = ({ icon, size = 24, className = "", style = {}, ...rest }: I
                 {...rest}
               >
                 {/*<path d={el.icon.paths[0]} fill="currentColor" {...el.icon.attrs} /> */}
-                <path d={el.icon.paths[0]} fill="currentColor" />
+                <path d={el.icon.paths.toString()} fill="currentColor" />
               </svg>
             )
           }

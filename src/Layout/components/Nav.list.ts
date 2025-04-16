@@ -25,13 +25,12 @@ export const NavList: INav[] = [
     title: "Forms",
     nav: [
       { id: 0, external: false, description: "Overview", link: "/" },
-      { id: 0, external: false, description: "Buttons", link: "/button" },
-      { id: 0, external: false, description: "Text Field", link: "/form" },
-      { id: 0, external: false, description: "Search", link: "/form" },
-      { id: 0, external: false, description: "Checkbox & Radio", link: "/form" },
-      { id: 0, external: false, description: "Rating", link: "/form" },
-      { id: 0, external: false, description: "Switch", link: "/form" },
-      { id: 0, external: false, description: "Validation", link: "/form" },
+      { id: 1, external: false, description: "Text Field", link: "/form" },
+      { id: 2, external: false, description: "Search", link: "/form" },
+      { id: 3, external: false, description: "Checkbox & Radio", link: "/form" },
+      { id: 4, external: false, description: "Rating", link: "/form" },
+      { id: 5, external: false, description: "Switch", link: "/form" },
+      { id: 6, external: false, description: "Validation", link: "/form" },
     ]
   },
   {
@@ -40,12 +39,15 @@ export const NavList: INav[] = [
     title: "Components",
     nav: [
       { id: 0, external: false, description: "Overview", link: "/" },
-      { id: 0, external: false, description: "Icons", link: "/icons" },
-      { id: 1, external: false, description: "Dropdown", link: "/dropdown" },
-      { id: 2, external: false, description: "Card", link: "/card" },
-      { id: 3, external: false, description: "Header", link: "/header" },
-      { id: 4, external: false, description: "Carousel", link: "/carousel" },
-      { id: 5, external: false, description: "Footer", link: "/footer" },
+      { id: 1, external: false, description: "Buttons", link: "/button" },
+      { id: 2, external: false, description: "Icons", link: "/icons" },
+      { id: 3, external: false, description: "Icon List", link: "/iconlist" },
+      { id: 4, external: false, description: "Dropdown", link: "/dropdown" },
+      { id: 5, external: false, description: "Card", link: "/card" },
+      { id: 6, external: false, description: "Header", link: "/header" },
+      { id: 7, external: false, description: "Carousel", link: "/carousel" },
+      { id: 8, external: false, description: "Footer", link: "/footer" },
+      { id: 9, external: true, description: "Spinners", link: "/components/spinners" },
     ]
   },
   {
