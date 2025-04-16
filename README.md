@@ -1,13 +1,13 @@
 # AnimeFLV Clone Components
 
-Libreria para conectar los componentes y estilos en un solo lugar, a demas de albergar la documentación de la misma.
+Library for connect components and styles in one place, plus contain the documentation of itself.
 
 > [!WARNING]
-> Este proyecto es un clon del sitio de AnimeFLV y esta desarrollado con propositos de demostración en mi portfolio, no es un proyecto official.
+> This project is a clone of AnimeFLV official site and is develop purpose of demostration in my portfolio, is not a official project.
 
 ## Microfrontend
 
-Este proyecto utiliza la metodologia de microfrontend, por lo tanto el proyecto en si cuenta con diferentes modulos interconectados. 
+This project is develop with microfrontend methodology, for this reason the project itself has different interconnected modules.
 
 - **Library** - [Github](https://github.com/matidiaz000/animeflv-clone-components/) - [Demo](https://animeflv-clone-components.vercel.app/)
 - **Configuration** - [Github](https://github.com/matidiaz000/animeflv-clone-host/) - [Demo](https://animeflv-clone-host.vercel.app/)
@@ -52,4 +52,4 @@ Get started in the AnimeFLV Clone Components [documentation](https://animeflv-cl
 
 ## Description
 
-Este proyecto es para mostrar mis conocimientos en Microfrontend, Clean Architecture, SSG (Static Site Generator), ci/cd, Develop npm library & React + Vite + SASS.
+This project is to showcase my knowledge in Microfrontend, Clean Architecture, SSG (Static Site Generator), ci/cd, Develop npm library & React + Vite + SASS.
