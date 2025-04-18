@@ -29,6 +29,9 @@ export default defineConfig((env) => ({
       external: ['react', 'react-dom'],
       output: {
         entryFileNames: '[name].js',
+        interop: 'auto',
+        preserveModules: true,
+        format: 'esm',
         // Provide global variables to use in the UMD build
         // for externalized deps
         globals: {
