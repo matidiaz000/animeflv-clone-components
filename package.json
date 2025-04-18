@@ -1,5 +1,5 @@
 {
-  "version": "0.0.25",
+  "version": "0.0.26",
   "name": "@matidiaz000/animeflv-clone-components",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/matidiaz000"
@@ -19,11 +19,12 @@
     "prepublishOnly": "npm run build:lib"
   },
   "peerDependencies": {
-    "bootstrap": "^5.3.5",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "react-router-dom": "6.30.0"
   },
   "devDependencies": {
+    "bootstrap": "^5.3.5",
     "@eslint/js": "^9.21.0",
     "@matidiaz000/animeflv-clone-components": "^0.0.24",
     "@types/node": "^22.14.0",
@@ -36,9 +37,6 @@
     "eslint-plugin-react-refresh": "^0.4.19",
     "globals": "^15.15.0",
     "highlight.js": "^11.11.1",
-    "icomoon-react": "^3.0.0",
-    "react-icomoon": "^2.6.1",
-    "react-router-dom": "^6.30.0",
     "sass": "~1.64.2",
     "typescript": "~5.7.2",
     "typescript-eslint": "^8.24.1",
