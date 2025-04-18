@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom'
 import type { IColors } from '../../lib'
 import { Icon } from '../../lib'
 
@@ -19,7 +18,7 @@ interface IProps {
   [x: string]: any;
 }
 
-export const Button = ({variant, children, href, reload, external, disabled, color, span, size, startIcon, endIcon, className, ...rest}: IProps) => {
+export const Button = ({variant, children, href, external, disabled, color, span, size, startIcon, endIcon, className, ...rest}: IProps) => {
   const getClass = () => `
     btn 
     text-decoration-none
@@ -36,23 +35,13 @@ export const Button = ({variant, children, href, reload, external, disabled, col
     ${className}
   `;
 
-  if (href && external) {
+  if (href) {
     return (
       <a className={getClass()} href={href} target={external ? "_blank" : "_top"} {...rest}>
         {startIcon && <Icon className={`${children && "me-1"}`} icon={startIcon} />}
         {children}
         {endIcon && <Icon className="ms-1" icon={endIcon} />}
       </a>
-    )
-  }
-
-  if (href) {
-    return (
-      <NavLink className={getClass()} to={href} reloadDocument={reload} {...rest}>
-        {startIcon && <Icon className={`${children && "me-1"}`} icon={startIcon} />}
-        {children}
-        {endIcon && <Icon className="ms-1" icon={endIcon} />}
-      </NavLink>
     )
   }
 
