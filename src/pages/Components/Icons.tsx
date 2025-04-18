@@ -1,7 +1,7 @@
 import CodeBlock from '../../components/CodeBlock';
 import { NavLink } from 'react-router-dom'
-import { Icon } from '../../../lib'
-//import { Icon } from '@matidiaz000/animeflv-clone-components'
+//import { Icon } from '../../../lib'
+import { Icon } from '@matidiaz000/animeflv-clone-components'
 
 const IconsPage = () => {
   return (

@@ -1,6 +1,6 @@
 import CodeBlock from '../../components/CodeBlock';
-import { Button } from '../../../lib'
-//import { Button } from '@matidiaz000/animeflv-clone-components'
+//import { Button } from '../../../lib'
+import { Button } from '@matidiaz000/animeflv-clone-components'
 
 const ButtonPage = () => {
   return (

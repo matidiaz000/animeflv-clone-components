@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import IconsJSON from '../../../lib/icomoon/selection.json'
-import { Icon } from '../../../lib'
-//import { Icon } from '@matidiaz000/animeflv-clone-components'
+//import { Icon } from '../../../lib'
+import { Icon } from '@matidiaz000/animeflv-clone-components'
 import { Alert, IAlert } from '../../components/Alert';
 
 const IconsPage = () => {

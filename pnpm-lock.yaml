@@ -12,8 +12,8 @@ importers:
         specifier: ^9.21.0
         version: 9.24.0
       '@matidiaz000/animeflv-clone-components':
-        specifier: ^0.0.24
-        version: 0.0.24(bootstrap@5.3.5(@popperjs/core@2.11.8))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^0.0.30
+        version: 0.0.30(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/node':
         specifier: ^22.14.0
         version: 22.14.1
@@ -393,12 +393,11 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
-  '@matidiaz000/animeflv-clone-components@0.0.24':
-    resolution: {integrity: sha512-4zpC0ylPwt+Yv5s8qFwsHHZAXc/JIyy0rZ3IOLhnGkbU4gIqGsXn+fAR63PGndIaNmjL8FmPws/7xn+nOI78hg==, tarball: https://npm.pkg.github.com/download/@matidiaz000/animeflv-clone-components/0.0.24/58b2a0c612acaac3b2d4bfce6b669741f9d56461}
+  '@matidiaz000/animeflv-clone-components@0.0.30':
+    resolution: {integrity: sha512-whr7vrGBKJ71zVCMnGdj27MmoPLTZWF6hJRDat1wI0SCYcCQL9RxgXIqjjLkHUZCS6DHZnE3Q5Fi+mjMROfNEw==, tarball: https://npm.pkg.github.com/download/@matidiaz000/animeflv-clone-components/0.0.30/fc38d4974851a4990e80f6fb921fc26eb91e739a}
     peerDependencies:
-      bootstrap: ^5.3.5
-      react: ^18.3.1
-      react-dom: ^18.3.1
+      react: 18.3.1
+      react-dom: 18.3.1
 
   '@microsoft/api-extractor-model@7.30.5':
     resolution: {integrity: sha512-0ic4rcbcDZHz833RaTZWTGu+NpNgrxVNjVaor0ZDUymfDFzjA/Uuk8hYziIUIOEOSTfmIQqyzVwlzxZxPe7tOA==}
@@ -1059,8 +1058,8 @@ packages:
   eventemitter3@5.0.1:
     resolution: {integrity: sha512-GWkBvjiSZK87ELrYOSESUYeVIc9mvLLf/nXalMOS5dYrgZq9o5OVkbZAVM06CVxYsCwH9BDZFPlQTlPA1j4ahA==}
 
-  exsolve@1.0.4:
-    resolution: {integrity: sha512-xsZH6PXaER4XoV+NiT7JHp1bJodJVT+cxeSH1G0f0tlT0lJqYuHUP3bUx2HtfTDvOagMINYp8rsqusxud3RXhw==}
+  exsolve@1.0.5:
+    resolution: {integrity: sha512-pz5dvkYYKQ1AHVrgOzBKWeP4u4FRb3a6DNK2ucr0OoNwYIU4QWsJ+NM36LLzORT+z845MzKHHhpXiUF5nvQoJg==}
 
   fast-deep-equal@3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
@@ -2119,9 +2118,8 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
-  '@matidiaz000/animeflv-clone-components@0.0.24(bootstrap@5.3.5(@popperjs/core@2.11.8))(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@matidiaz000/animeflv-clone-components@0.0.30(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
-      bootstrap: 5.3.5(@popperjs/core@2.11.8)
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
 
@@ -2839,7 +2837,7 @@ snapshots:
 
   eventemitter3@5.0.1: {}
 
-  exsolve@1.0.4: {}
+  exsolve@1.0.5: {}
 
   fast-deep-equal@3.1.3: {}
 
@@ -3251,7 +3249,7 @@ snapshots:
   pkg-types@2.1.0:
     dependencies:
       confbox: 0.2.2
-      exsolve: 1.0.4
+      exsolve: 1.0.5
       pathe: 2.0.3
 
   possible-typed-array-names@1.1.0: {}
