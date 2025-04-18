@@ -12,8 +12,8 @@ importers:
         specifier: ^9.21.0
         version: 9.24.0
       '@matidiaz000/animeflv-clone-components':
-        specifier: ^0.0.30
-        version: 0.0.30(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+        specifier: ^0.0.31
+        version: 0.0.31(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
       '@types/node':
         specifier: ^22.14.0
         version: 22.14.1
@@ -393,8 +393,8 @@ packages:
   '@jridgewell/sourcemap-codec@1.5.0':
     resolution: {integrity: sha512-gv3ZRaISU3fjPAgNsriBRqGWQL6quFx04YMPW/zD8XMLsU32mhCCbfbO6KZFLjvYpCZ8zyDEgqsgf+PwPaM7GQ==}
 
-  '@matidiaz000/animeflv-clone-components@0.0.30':
-    resolution: {integrity: sha512-whr7vrGBKJ71zVCMnGdj27MmoPLTZWF6hJRDat1wI0SCYcCQL9RxgXIqjjLkHUZCS6DHZnE3Q5Fi+mjMROfNEw==, tarball: https://npm.pkg.github.com/download/@matidiaz000/animeflv-clone-components/0.0.30/fc38d4974851a4990e80f6fb921fc26eb91e739a}
+  '@matidiaz000/animeflv-clone-components@0.0.31':
+    resolution: {integrity: sha512-rlK6Dclp1dACRHdk/dddc0lyWmWxii5yW6x7WZjWtYQ5xsAnYxltaoT9SIsDOgaj0RO9kip8u+QKXiX9+8fHzg==, tarball: https://npm.pkg.github.com/download/@matidiaz000/animeflv-clone-components/0.0.31/fd4710234b2b59dd5eab4b8f688b554d038b5eaa}
     peerDependencies:
       react: 18.3.1
       react-dom: 18.3.1
@@ -2118,7 +2118,7 @@ snapshots:
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
 
-  '@matidiaz000/animeflv-clone-components@0.0.30(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
+  '@matidiaz000/animeflv-clone-components@0.0.31(react-dom@18.3.1(react@18.3.1))(react@18.3.1)':
     dependencies:
       react: 18.3.1
       react-dom: 18.3.1(react@18.3.1)
